@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f8fc;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 90%;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .left {
+            flex: 1;
+            padding: 40px 30px;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f8fc;
+            padding: 20px;
+        }
+        .right img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .sign-in-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .sign-in-btn:hover {
+            background-color: #0056b3;
+        }
+        .social-signin {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .social-signin button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .social-signin button:last-child {
+            margin-right: 0;
+        }
+        .google {
+            background-color: #db4a39;
+            color: #fff;
+        }
+        .facebook {
+            background-color: #3b5998;
+            color: #fff;
+        }
+        .register {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .register a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Welcome Back!</h1>
+            <p>Hey, Enter your details to get sign in to your Account</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Enter Email/Phone Number</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email/Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            
+            <div class="social-signin">
+                <button class="google">Google</button>
+                <button class="facebook">Facebook</button>
+            </div>
+            <div class="register">
+                Don't have an Account? <a href="sign-up.html">Register</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="src/register.png" alt="Illustration">
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        // Fetching dummy email and password for demonstration
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Log the email and password to the console (optional)
+        console.log(`Email: ${email}, Password: ${password}`);
+
+        // Redirect to the dummy index.html
+        window.location.href = 'beranda.html';
+    });
+</script>
+</html>

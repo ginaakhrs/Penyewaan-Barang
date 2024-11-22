@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #44A6E3;
+  }
+  
+  .hero-section img {
+    border-radius: 10px;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #44A6E3;
+  }
+
+  /* Styling for "See More" button */
+.see-more-btn {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #007bff; /* Warna teks (biru) */
+    font-weight: bold; /* Membuat teks tebal */
+    font-size: 16px; /* Ukuran font */
+  }
+  
+  .see-more-btn:hover {
+    color: #0056b3; /* Warna teks saat hover (biru gelap) */
+    text-decoration: none; /* Tetap tanpa underline saat hover */
+  }
+  
+  

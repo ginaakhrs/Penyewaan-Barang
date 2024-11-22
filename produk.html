@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .product-card {
+      border: none;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .product-card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .product-card .card-body {
+      text-align: center;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .product-price {
+      color: #28a745;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .btn-learn-more {
+      background-color: #007bff;
+      color: white;
+    }
+    .btn-learn-more:hover {
+      background-color: #0056b3;
+    }
+    .footer-section {
+  background-color: #007BCE; /* Blue background */
+  padding: 40px 20px;
+  color: white;
+}
+
+.contact-box {
+  background-color: #d1e8ff; /* Light blue box */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contact-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BCE;
+}
+
+.contact-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #007BCE;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-column ul li a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html">El-Rental</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="produk.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="form-penyewaan.html">Form Penyewaan</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="riwayat.html">Riwayat</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="profil.html">Profil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h1 class="text-center mb-5">New Collection</h1>
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product5.png" class="card-img-top" alt="Camera">
+          <div class="card-body">
+            <h5 class="product-title">Canon EOS 200D</h5>
+            <p class="product-price">Rp500.000/hari</p>
+            <a href="detail-produk.html?product=Canon EOS 200D&image=src/product5.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product6.png" class="card-img-top" alt="Laptop">
+          <div class="card-body">
+            <h5 class="product-title">MacBook Air M1</h5>
+            <p class="product-price">Rp1.200.000/hari</p>
+            <a href="detail-produk.html?product=MacBook Air M1&image=src/product6.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product7.png" class="card-img-top" alt="Headphone">
+          <div class="card-body">
+            <h5 class="product-title">Sony WH-1000XM4</h5>
+            <p class="product-price">Rp350.000/hari</p>
+            <a href="detail-produk.html?product=Sony WH-1000XM4&image=src/product7.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product8.png" class="card-img-top" alt="Speaker">
+          <div class="card-body">
+            <h5 class="product-title">JBL Flip 5</h5>
+            <p class="product-price">Rp99.000/hari</p>
+            <a href="detail-produk.html?product=JBL Flip 5&image=src/product8.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center mt-5 mb-5">Product Collection</h2>
+    <div class="row g-4">
+      <!-- Product 5 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product9.png" class="card-img-top" alt="Projector">
+          <div class="card-body">
+            <h5 class="product-title">Epson EB-S41</h5>
+            <p class="product-price">Rp200.000/hari</p>
+            <a href="detail-produk.html?product=Epson EB-S41&image=src/product9.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product10.png" class="card-img-top" alt="Drone">
+          <div class="card-body">
+            <h5 class="product-title">DJI Mavic Air 2</h5>
+            <p class="product-price">Rp1.000.000/hari</p>
+            <a href="detail-produk.html?product=DJI Mavic Air 2&image=src/product10.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 7 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product11.png" class="card-img-top" alt="Microphone">
+          <div class="card-body">
+            <h5 class="product-title">Shure SM7B</h5>
+            <p class="product-price">Rp150.000/hari</p>
+            <a href="detail-produk.html?product=Shure SM7B&image=src/product11.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 8 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product12.png" class="card-img-top" alt="Gaming Console">
+          <div class="card-body">
+            <h5 class="product-title">PlayStation 5</h5>
+            <p class="product-price">Rp500.000/hari</p>
+            <a href="detail-produk.html?product=PlayStation 5&image=src/product12.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 9 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product13.png" class="card-img-top" alt="Tablet">
+          <div class="card-body">
+            <h5 class="product-title">iPad Pro 2022</h5>
+            <p class="product-price">Rp800.000/hari</p>
+            <a href="detail-produk.html?product=iPad Pro 2022&image=src/product13.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 10 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product14.png" class="card-img-top" alt="Camera">
+          <div class="card-body">
+            <h5 class="product-title">Nikon D7500</h5>
+            <p class="product-price">Rp600.000/hari</p>
+            <a href="detail-produk.html?product=Nikon D7500&image=src/product14.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 11 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product15.png" class="card-img-top" alt="Speaker">
+          <div class="card-body">
+            <h5 class="product-title">Bose SoundLink Mini</h5>
+            <p class="product-price">Rp100.000/hari</p>
+            <a href="detail-produk.html?product=Bose SoundLink Mini&image=src/product15.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 12 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product16.png" class="card-img-top" alt="Smartwatch">
+          <div class="card-body">
+            <h5 class="product-title">Apple Watch Series 7</h5>
+            <p class="product-price">Rp300.000/hari</p>
+            <a href="detail-produk.html?product=Apple Watch Series 7&image=src/product16.png" class="btn btn-learn-more btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="container">
+    <!-- Contact Section -->
+    <div class="contact-box">
+      <div class="contact-icon">
+        <img src="src/wa.png" alt="Phone Icon" class="icon" />
+      </div>
+      <div class="contact-text">
+        <h3>Ada yang bisa kami bantu?</h3>
+        <p>Baik, silahkan klik ini untuk menghubungi kami</p>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Kamera</a></li>
+          <li><a href="#">Printer</a></li>
+          <li><a href="#">Laptop</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Rental</a></li>
+          <li><a href="#">Electronic</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Customer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Partner with Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Media Social</h4>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> El Rental Official</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> @El_Rental</a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i> El Rental</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i> El Rental</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/fa8824f9a4.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

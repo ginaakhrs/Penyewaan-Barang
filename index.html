@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El-Rental</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fa8824f9a4.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f8fc;
+    }
+
+    .brand-section {
+        background-color: #007bff; /* Blue Background */
+        padding: 50px 0;
+    }
+
+    .text-white {
+        color: #fff;
+    }
+
+    .brand-logos {
+        display: flex;
+        justify-content: center; /* Align logos to the left */
+        align-items: center; /* Align logos vertically in the middle */
+        flex-wrap: nowrap; /* Prevent wrapping to new rows */
+        overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+        gap: 100px; /* Space between logos */
+    }
+
+    .brand-logo {
+        max-width: 120px; /* Limits the maximum width of each logo */
+        height: auto; /* Maintains aspect ratio */
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover Effect */
+    .brand-logo:hover {
+        transform: scale(1.1); /* Slight zoom-in effect on hover */
+    }
+
+    /* Product cards */
+
+    .categories-section {
+        background-color: #feffff; /* Blue Background */
+        padding: 50px 0;
+    }
+  
+    .product-card {
+      border: none;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .product-card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .product-card .card-body {
+      text-align: center;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .product-detail {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    /* See More button styling */
+    .btn-see-more {
+      display: block;
+      margin: 20px auto 0;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .btn-see-more:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .footer-section {
+  background-color: #007BCE; /* Blue background */
+  padding: 40px 20px;
+  color: white;
+}
+
+.contact-box {
+  background-color: #d1e8ff; /* Light blue box */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contact-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BCE;
+}
+
+.contact-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #007BCE;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-column ul li a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">El-Rental</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="produk.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="form-penyewaan.html">Form Penyewaan</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="riwayat.html">Riwayat</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="profil.html">Profil</a></li>
+        </ul>
+        <!-- Buttons for Sign In and Log In -->
+        <a href="sign-in.html" class="btn btn-primary">Sign In</a>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <div class="container mt-5 d-flex align-items-center">
+    <div class="text-start">
+      <h1 class="fw-bold">Selamat Datang di El-Rental</h1>
+      <p class="text-muted">Ingin sewa apa hari ini?</p>
+      <p>Selamat datang di El Rental, solusi terbaik untuk semua kebutuhan penyewaan barang elektronik Anda! Temukan berbagai peralatan berkualitas dengan harga terjangkau dan proses penyewaan yang mudah.</p>
+      <button class="btn btn-primary me-3">Choose Now</button>
+      <button class="btn btn-outline-primary">Devices</button>
+    </div>
+    <img src="src/banner.png" alt="Hero Image" class="img-fluid" style="max-width: 50%;">
+  </div>
+
+  <!-- Brand Section -->
+  <div class="brand-section text-center">
+    <div class="container">
+        <h2 class="text-white mb-4">Our Trusted Brands</h2>
+        <div class="brand-logos">
+            <!-- Brand Logo 1 -->
+            <img src="src/nikon.png" alt="Nikon" class="brand-logo">
+            <!-- Brand Logo 2 -->
+            <img src="src/samsung.png" alt="Samsung" class="brand-logo">
+            <!-- Brand Logo 3 -->
+            <img src="src/apple.png" alt="Apple" class="brand-logo">
+            <!-- Brand Logo 4 -->
+            <img src="src/fujifilm.png" alt="Fujifilm" class="brand-logo">
+            <!-- Brand Logo 5 -->
+            <img src="src/panasonic.png" alt="Panasonic" class="brand-logo">
+            <!-- Brand Logo 6 -->
+            <img src="src/epson.png" alt="Epson" class="brand-logo">
+        </div>
+    </div>
+  
+
+  <!-- Categories Section -->
+  <div class="categories-section text-center">
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Our Popular Product</h1>
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product1.png" class="card-img-top" alt="Camera">
+          <div class="card-body">
+            <h5 class="product-title">Canon EOS 200D</h5>
+            <p class="product-detail">Disewa 116 kali</p>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product2.png" class="card-img-top" alt="Printer">
+          <div class="card-body">
+            <h5 class="product-title">Epson L1110</h5>
+            <p class="product-detail">Disewa 94 kali</p>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product3.png" class="card-img-top" alt="Laptop">
+          <div class="card-body">
+            <h5 class="product-title">Asus Vivobook 14</h5>
+            <p class="product-detail">Disewa 80 kali</p>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="src/product4.png" class="card-img-top" alt="Tablet">
+          <div class="card-body">
+            <h5 class="product-title">iPad Air M1</h5>
+            <p class="product-detail">Disewa 224 kali</p>
+          </div>
+        </div>
+      </div>
+      <!-- Section with "See More" -->
+      <div class="d-grid gap-2">
+        <a href="produk.html" class="btn btn-primary" type="button">See More</a>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <!-- Contact Section -->
+      <div class="contact-box">
+        <div class="contact-icon">
+          <img src="src/wa.png" alt="Phone Icon" class="icon" />
+        </div>
+        <div class="contact-text">
+          <h3>Ada yang bisa kami bantu?</h3>
+          <p>Baik, silahkan klik ini untuk menghubungi kami</p>
+        </div>
+      </div>
+  
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Kamera</a></li>
+            <li><a href="#">printer</a></li>
+            <li><a href="#">Laptop</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#">Rental</a></li>
+            <li><a href="#">Electronic</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Customer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Partner with Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Media Social</h4>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> El Rental Official</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> @El_Rental</a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i> El Rental</a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i> El Rental</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
